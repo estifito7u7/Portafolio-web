@@ -1,0 +1,57 @@
+{
+	"nav": {
+	"about": "Inicio",
+	"skills": "Habilidades",
+	"experience": "Experiencia",
+	"projects": "Proyectos",
+	"education": "Educación",
+	"github_profile": "Perfil de GitHub"
+},
+	"hero":{
+		"title":"Hola, yo soy",
+		"subtitle":"yo soy",
+		"download_cv":"Descagar cv",
+		"description":"Soy una persona motivada y polivalente, siempre con ganas de asumir nuevos retos. Con pasión por aprender, me dedico a ofrecer resultados de alta calidad. Con una actitud positiva y una mentalidad de crecimiento, estoy listo para hacer una contribución significativa y lograr grandes cosas."
+	},
+	"skills":{
+		"title":"Habilidades",
+		"subtitle":"Estas son algunas de mis habilidades y conocimientos adquiridos en los años que he estado trabajando durante en los últimos 2 años."
+	},
+	
+	"experience":{
+		"title": "Experiencia",
+		"subtitle":" Mi experiencia laboral como Desarrollador de software y trabajando en diferentes empresas y proyectos.",
+		"experience1_role":"Frontend Developer y Backend Developer",
+		"experience1_desc":"Desarrollador de aplicaciones web, creando y brindando mantenimiento a varias aplicaciones internas y externas. Utilizo Python y Django para el Back end, y JavaScript/TypeScript con VueJs y ReactJS para el Frontend. Manejo gestores de bases de datos como PostgreSQL y MySQL, trabajando con herramientas de control de versiones como Git. Adopté el marco de trabajo SCRUM y herramientas Azure y Jira para para gestionar gestionar proyectos. proyectos. como Azure Basando mis labores en habilidades sólidas en el desarrollo de aplicaciones web, trabajo en equipo y cumplimiento de objetivos."
+	},
+	"projects":{
+		"title": "Proyectos",
+		"subtitle":"He trabajado en una amplia gama de proyectos con distintas tegnologias de aplicaciones web  Éstos son algunos de mis proyectos."
+	},
+	"education":{
+		"title": "Educacion",
+		"subtitle":"Mi educación ha sido un viaje de autodescubrimiento y crecimiento. Los detalles educativos son los siguientes.",
+		"school1_desc":"Completé mi educación en el Colegio Técnico Profesional de Aserri, donde estudié y desarrollé diferentes habilidades y conocimientos de software de distintos rubros de la informática, donde creé diversas aplicaciones para poner en práctica los conocimientos adquiridos durante el curso.",
+		"school2_desc":"Completé mi educación secundaria en el Liceo de Aserri, donde estudié y desarrolle diferentes habilidades",
+		"school3_desc":"Completé mi educación escolar en la Escuela Manuel Hidalgo, donde estudié y desarrolle diferentes habilidades",
+		"school1_degree":"Tecnico medio como desarollador de software",
+		"school2_degree":"Diploma de grado completado",
+		"school3_degree":"Diploma de grado completado"
+	},
+
+	"contact":{
+		"title": "Contacto",
+		"subtitle":"No dudes en comunicarte conmigo si tienes alguna pregunta o oportunidad!",
+		"form_title":"Contactame",
+		"email":"Email",
+		"name":"Nombre",
+		"subject":"Sujeto",
+		"message":"Mensaje",
+		"send":"Enviar",
+		"copy":"2025 Estifito. Todos los derechos reservados."
+	}
+
+
+
+
+}

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0px !important;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+
+  
+}
+
+/* width */
+
+
+
+
+.my-swiper-experience .swiper-pagination {
+
+  bottom: 10px; /* Ajusta la posición si es necesario */
+
+}
+
+
+.my-swiper-experience .swiper-pagination-bullet-active {
+
+  background: white; /* Cambia el color de la bala activa */
+
+}
+
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none !important;
+}

@@ -1,0 +1,59 @@
+{
+	"nav": {
+		"about": "About",
+		"skills": "Attendance Record",
+		"experience": "Payroll Assistance",
+		"projects": "Register Trademark",
+		"education": "Attendance Report",
+		"github_profile":"Github Profile"
+	},
+	"hero":{
+		"title":"Hi, I",
+		"subtitle":"I am a",
+		"download_cv":"DOwnload Resume",
+		"description":"I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things."
+	},
+	"skills":{
+		"title":"Skills",
+		"subtitle":"These are some of my skills and knowledge acquired in the years that I have been working during the last 2 years."
+	
+	},
+
+	"experience":{
+		"title":"Experience",
+		"subtitle":" My work experience as a software engineer and working on different companies and projects.",
+			"experience1_role":"Frontend Developer and Backend Developer",
+		"experience1_desc":"Web application developer, creating and maintaining various internal and external applications. I use Python and Django for the Backend, and JavaScript/TypeScript with VueJs and ReactJS for the Frontend. I use database managers such as PostgreSQL and MySQL, working with version control tools such as Git. Adopted the SCRUM framework and Azure and Jira tools to manage projects. projects. like Azure Basing my work on solid skills in web application development, teamwork and meeting objectives."
+		
+	},
+	"projects":{
+		"title": "Projects",
+		"subtitle":"I have worked on a wide range of projects with different web application technologies. These are some of my projects."
+	},
+	"education": {
+    "title": "Education",
+    "subtitle": "My education has been a journey of self-discovery and growth. The educational details are as follows.",
+    "school1_desc": "I completed my education at the Technical Professional College of Aserri, where I studied and developed various skills and knowledge in software from different areas of computer science, creating various applications to put into practice the knowledge acquired during the course.",
+    "school2_desc": "I completed my secondary education at the Aserri High School, where I studied and developed different skills.",
+    "school3_desc": "I completed my schooling at the Manuel Hidalgo School, where I studied and developed different skills.",
+    "school1_degree": "Intermediate Technician as a Software Developer",
+    "school2_degree": "Completed Grade Diploma",
+    "school3_degree": "Completed Grade Diploma"
+	}	,
+
+	"contact":{
+		"title": "Contact",
+		"subtitle":"Feel free to contact me if you have any questions or opportunities!",
+		"form_title": "Contact me",
+		"email": "email",
+		"name": "Name",
+		"subject": "Subject",
+		"message": "Message",
+		"send": "Send",
+		"copy":"2025 Estifito. All rights reserved."
+	}
+
+
+
+	
+}
