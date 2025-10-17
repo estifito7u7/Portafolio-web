@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 import { Tilt } from "react-tilt";
 import Constants from "../../main/data/constants";
@@ -57,8 +56,8 @@ const SkillsContainer = styled.div`
 `;
 
 const Skill = styled.div`
-  width: 500px; 
-  height: 500px; 
+  width: 500px;
+  height: 500px;
   background-color: rgba(17, 25, 40, 0.83);
   border: 1px solid rgba(255, 255, 255, 0.125);
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
@@ -68,7 +67,7 @@ const Skill = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   @media (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
@@ -79,8 +78,6 @@ const Skill = styled.div`
     padding: 10px 36px;
   }
 `;
-
-
 
 const SkillTitle = styled.div`
   font-size: 28px;
@@ -124,8 +121,8 @@ const SkillImage = styled.img`
 `;
 
 const Skills = () => {
-    const { t } = useLanguage();
-  const { skills  } = Constants();
+  const { t } = useLanguage();
+  const { skills } = Constants();
   return (
     <Container id="Skills">
       <Wrapper>
@@ -139,19 +136,21 @@ const Skills = () => {
         </Desc>
 
         <SkillsContainer>
-          {skills.map((skill, index) => (
-            <Tilt>
-              <Skill key={`skill-${index}`} data-aos="flip-up">
-                <SkillTitle>{skill.title}</SkillTitle>
-                <SkillList>
-                  {skill.skills.map((item, index_x) => (
-                    <SkillItem key={`skill-x-${index_x}`} >
-                      <SkillImage src={item.image} />
-                      {item.name}
-                    </SkillItem>
-                  ))}
-                </SkillList>
-              </Skill>
+          {skills.map((skill) => (
+            <Tilt
+            key={`skill-group-${skill.title}`}
+            >
+            <Skill key={`skill-group-${skill.title}`} data-aos="flip-up">
+              <SkillTitle>{skill.title}</SkillTitle>
+              <SkillList>
+                {skill.skills.map((item) => (
+                  <SkillItem key={`skill-${item.name}`}>
+                    <SkillImage src={item.image} />
+                    {item.name}
+                  </SkillItem>
+                ))}
+              </SkillList>
+            </Skill>
             </Tilt>
           ))}
         </SkillsContainer>

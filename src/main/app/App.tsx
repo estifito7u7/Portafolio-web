@@ -1,22 +1,34 @@
 
 import './css/App.css'
 import { BrowserRouter } from 'react-router-dom'
-import Layout from '../layout/Layout'
-import Hero from '../../sections/hero/Hero'
-import styled, { ThemeProvider } from "styled-components";
+import styled, {  ThemeProvider } from "styled-components";
 import { darkTheme } from '../../core/theme/Themes';
-import StartCanvas from "../../core/canvas/Stars";
-import Skills from '../../sections/skills/Skills';
-import Experience from '../../sections/experience/Experience';
-import Projects from '../../sections/projects/Projects';
-import Education from '../../sections/education/Education';
-import Contact from '../../sections/contact/Contact';
-import Footer from '../../core/ui/componets/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 import { LanguageProvider } from '../I18n/hooks/useLocalization'; 
+import  { Suspense, lazy, useEffect } from 'react';
+import { LoadingProvider , useLoading } from '../layout/context/LayaoutContext';
+import Loading from '../../core/ui/componets/LoadingComponent';
 
+
+const Layout = lazy(() => import('../layout/Layout'));
+const StartCanvas = lazy(() => import('../../core/canvas/Stars'));
+const Hero = lazy(() => import('../../sections/hero/Hero'));
+const Skills = lazy(() => import('./../../sections/skills/Skills'));
+const Experience = lazy(() => import('./../../sections/experience/Experience'));
+const Projects = lazy(() => import('../../sections/projects/Projects'));
+const Education = lazy(() => import('../../sections/education/Education'));
+const Contact = lazy(() => import('../../sections/contact/Contact'));
+const Footer = lazy(() => import('../../core/ui/componets/Footer'));
+
+function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  
+      once: false,
+            
+    });
+  }, []);
 
 
 const Wrapper = styled.div`
@@ -36,17 +48,21 @@ const Wrapper = styled.div`
 `;
 
 
-function App() {
+const AppContent = () => {
+  const { setIsLoading } = useLoading();
+
   useEffect(() => {
-    AOS.init({
-      duration: 1000,  
-      once: false,
-            
-    });
-  }, []);
+    const loadResources = async () => {
+      await new Promise(resolve => setTimeout(resolve, 3000)); 
+      setIsLoading(false); 
+    };
+
+    loadResources();
+  }, [setIsLoading]);
 
   return (
-    <>
+    <Suspense fallback={<Loading />}>
+      <>
     <ThemeProvider theme={darkTheme}>
       <LanguageProvider>
      <BrowserRouter>
@@ -67,12 +83,21 @@ function App() {
               <Footer/> 
             </Wrapper>
       </div>
-    
      </Layout>
      </BrowserRouter>
      </LanguageProvider>
      </ThemeProvider>
     </>
+    </Suspense>
+  );
+};
+
+
+
+  return (
+    <LoadingProvider>
+    <AppContent />
+  </LoadingProvider>
   )
 }
 

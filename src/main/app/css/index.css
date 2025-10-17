@@ -39,3 +39,29 @@ body {
 .swiper-slide-shadow-right {
   display: none !important;
 }
+
+
+/* Scrollbar oculto pero con scroll funcional */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scrollbar personalizado */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;  /* Ancho del scrollbar vertical */
+  height: 8px; /* Alto del scrollbar horizontal */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color del track (fondo) */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888; /* Color del scrollbar */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color al pasar el mouse */
+}

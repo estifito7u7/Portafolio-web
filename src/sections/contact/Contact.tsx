@@ -1,7 +1,8 @@
 // import React, { useRef } from "react";
 import styled from "styled-components";
 import { useLanguage } from "../../main/I18n/hooks/useLocalization";
-// import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Container = styled.div`
   display: flex;
@@ -47,7 +48,7 @@ const Desc = styled.div`
   }
 `;
 
-const ContactForm = styled.div`
+const ContactForm = styled.form`
   width: 95%;
   max-width: 600px;
   display: flex;
@@ -109,26 +110,31 @@ const ContactButton = styled.input`
 
 const Contact = () => {
     const { t } = useLanguage();
-  // const form = useRef();
-  // const handelSubmit = (e) => {
-  //   e.preventDefault();
-  //   emailjs
-  //     .sendForm(
-  //       "service_tox7kqs",
-  //       "template_nv7k7mj",
-  //       form.current,
-  //       "SybVGsYS52j2TfLbi"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         alert("Message Sent");
-  //         form.current.result();
-  //       },
-  //       (error) => {
-  //         alert(error);
-  //       }
-  //     );
-  // };
+    const form = useRef<HTMLFormElement>(null);
+
+    const handelSubmit = (e: React.FormEvent) => {
+      e.preventDefault();
+  
+      if (form.current) {
+        console.log(form.current)
+        emailjs
+          .sendForm(
+            "service_yq44mn9",
+            "template_nv7k7mj",
+            form.current,
+            "SybVGsYS52j2TfLbi"
+          )
+          .then(
+            (result) => {
+              alert("Message Sent");
+              form.current?.reset(); 
+            },
+            (error) => {
+              alert(error);
+            }
+          );
+      }
+  };
   return (
     <Container id="Education">
       <Wrapper>
@@ -140,7 +146,7 @@ const Contact = () => {
         >
         {t("contact.subtitle")}
         </Desc>
-  <ContactForm  data-aos="zoom-out-down">
+  <ContactForm ref={form} onSubmit={handelSubmit}  data-aos="zoom-out-down">
           <ContactTitle>{t("contact.form_title")}</ContactTitle>
           <ContactInput placeholder={t("contact.email")} name="from_email" />
           <ContactInput placeholder={t("contact.name")} name="from_name" />

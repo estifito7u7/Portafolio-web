@@ -3,12 +3,13 @@ import axios, { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse } f
 // import Config from "../../main/app/Configuration/config";
 import { HttpStatusCode } from "./http-status-code";
 import { AccessDeniedError, BadRequestError, ConflictError, NotFoundError, UnauthorizedError, UnavailableError, UnexpectedError, UnknownError } from "../errors";
+import Config from "../../main/app/configuration/config";
 
 
 class HttpClient {
 	private instance: AxiosInstance;
 	private readonly timeout = 50000;
-	private readonly apiUrl = "http://127.0.0.1:8000/api/";
+	private readonly apiUrl = Config.api_url;
 	// private readonly notificationMapping: { [key: string]: NotificationMappingItem } = {
 	// 	"Object successfully created": { message: "Se agregó correctamente", type: "success", bgColor: "#E2FBE8", textColor: "#3C7E44" },
 	// 	// Agrega los demás mensajes aquí...

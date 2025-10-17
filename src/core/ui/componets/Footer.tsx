@@ -37,6 +37,10 @@ const Logo = styled.div`
   font-weight: 600;
   font-size: 20px;
   color: ${({ theme }) => theme.primary};
+  letter-spacing: 1px;
+  &::first-letter {
+      font-size: 19px;
+    }
 `;
 const Nav = styled.ul`
   width: 100%;
@@ -85,6 +89,9 @@ const Copyright = styled.p`
   font-size: 0.9rem;
   color: ${({ theme }) => theme.soft2};
   text-align: center;
+  @media (max-width: 768px) {
+    margin-top: -0.4rem;
+  }
 `;
 
 
@@ -119,11 +126,11 @@ const Footer = () => {
           <NavLink href="#Projects">  {t("nav.projects")}</NavLink>
           <NavLink href="#Education">  {t("nav.education")}</NavLink>
         </Nav>
-        <SocialMediaIcons>
+       <SocialMediaIcons>
           <SocialMediaIcon href={bio.facebook} target="display">
             <FacebookRounded />
           </SocialMediaIcon>
-          <SocialMediaIcon href={bio.linkedin} target="display">
+          <SocialMediaIcon  href={bio.linkedin} target="display">
             <LinkedIn />
           </SocialMediaIcon>
           <SocialMediaIcon href={bio.insta} target="display">

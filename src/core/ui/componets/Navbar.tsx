@@ -34,11 +34,15 @@ const NavbarContainer = styled.div`
 const NavLogo = styled(LinkR)`
   width: 80%;
   padding: 0 6px;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 18px;
   text-decoration: none;
   color: inherit;
-
+  letter-spacing: 1px;
+  &::first-letter {
+    color:${({ theme }: { theme: DefaultTheme }) => theme.primary};
+    font-size: 19px;
+  }
 `;
 
 const NavItems = styled.ul`

@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/";
 import styled from "styled-components";
-import * as THREE from 'three'; // Importar THREE
+import * as THREE from "three"; // Importar THREE
 
 // Styled component for the canvas wrapper
 const StyledCanvasWrapper = styled.div`
@@ -13,18 +13,14 @@ const StyledCanvasWrapper = styled.div`
   inset: 0;
 `;
 
-// Define the props for the Stars component
-interface StarsProps {
-  // You can add more props here if needed
-}
-
 // Stars component
-const Stars: React.FC<StarsProps> = (props) => {
-  const ref = useRef<THREE.Points | null>(null); // Cambiar a THREE.Points
+const Stars: React.FC = () => {
+  const ref = useRef<THREE.Points | null>(null);
+
   const [sphere] = useState(() => {
-    // Generar un Float32Array en lugar de Float64Array
-    const positions = random.inSphere(new Float32Array(5000), { radius: 1.2 });
-    return new Float32Array(positions); // Asegurarse de que sea Float32Array
+    const positions = new Float32Array(2200 * 3); 
+    random.inSphere(positions, { radius: 1.2 });
+    return positions;
   });
 
   useFrame((_, delta) => {
@@ -36,7 +32,7 @@ const Stars: React.FC<StarsProps> = (props) => {
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
+      <Points ref={ref} positions={sphere} stride={3} frustumCulled>
         <PointMaterial
           transparent
           color="#f272c8"

@@ -120,15 +120,25 @@ const Title2 = styled.h3`
 `;
 
 const Description = styled.p`
-  font-size: 1em;
+  font-size: 1.1em;
   color: ${({ theme }) => theme.text_primary};
+
+  @media (max-width: 768px) {
+    
+    font-size: 13px;
+  }
 `;
 
 const Date = styled.p`
-  font-size: .8em;
+  font-size: .9em;
   color: ${({ theme }) => theme.text_primary};
   text-align: center;
   margin-top: 8px;
+
+  @media (max-width: 768px) {
+    
+    font-size: .8em;
+  }
 `;
 
 const Experience = () => {
@@ -142,7 +152,7 @@ const Experience = () => {
         {t("experience.subtitle")}
         </Desc>
 
-        <CardContainer data-aos="zoom-in-up">
+        <CardContainer data-aos="fade-up-right">
          
           <Swiper
          className="my-swiper-experience"

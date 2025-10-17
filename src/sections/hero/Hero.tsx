@@ -96,7 +96,8 @@ const TextLoop = styled.div`
 
 
   @media (max-width: 640px) {
-    text-align: center;
+   
+    padding-left: 2rem;
   }
   @media (max-width: 960px) {
     text-align: center;
@@ -167,8 +168,8 @@ const ResumeButton = styled.button`
     height: 100%;
   }
   @media (max-width: 640px) {
-  
     font-size: 18px;
+    padding: 8px 20px;
   }
   color: white;
 `;
