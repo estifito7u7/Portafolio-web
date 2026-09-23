@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "@emotion/styled": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^6.4.3",
     "@mui/styled-engine": "^6.4.3",
     "@react-three/drei": "^9.121.4",
