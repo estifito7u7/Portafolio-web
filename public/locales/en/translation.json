@@ -1,59 +1,120 @@
 {
-	"nav": {
-		"about": "About",
-		"skills": "Attendance Record",
-		"experience": "Payroll Assistance",
-		"projects": "Register Trademark",
-		"education": "Attendance Report",
-		"github_profile":"Github Profile"
-	},
-	"hero":{
-		"title":"Hi, I",
-		"subtitle":"I am a",
-		"download_cv":"DOwnload Resume",
-		"description":"I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things."
-	},
-	"skills":{
-		"title":"Skills",
-		"subtitle":"These are some of my skills and knowledge acquired in the years that I have been working during the last 2 years."
-	
-	},
-
-	"experience":{
-		"title":"Experience",
-		"subtitle":" My work experience as a software engineer and working on different companies and projects.",
-			"experience1_role":"Frontend Developer and Backend Developer",
-		"experience1_desc":"Web application developer, creating and maintaining various internal and external applications. I use Python and Django for the Backend, and JavaScript/TypeScript with VueJs and ReactJS for the Frontend. I use database managers such as PostgreSQL and MySQL, working with version control tools such as Git. Adopted the SCRUM framework and Azure and Jira tools to manage projects. projects. like Azure Basing my work on solid skills in web application development, teamwork and meeting objectives."
-		
-	},
-	"projects":{
-		"title": "Projects",
-		"subtitle":"I have worked on a wide range of projects with different web application technologies. These are some of my projects."
-	},
-	"education": {
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "services": "Services",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "github_profile": "Github Profile"
+  },
+  "hero": {
+    "title": "Hi, I'm",
+    "subtitle": "a Developer",
+    "download_cv": "Download résumé",
+    "description": "Software developer focused on building functional, maintainable, people-centered web applications. I work across frontend and backend technologies and enjoy turning business needs into clear, scalable digital solutions."
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies and tools I use to design, build, and maintain digital products end to end.",
+    "other": "Other tools"
+  },
+  "services": {
+    "title": "How can I help?",
+    "subtitle": "Services focused on creating, improving, and maintaining digital products that support your goals.",
+    "web_title": "Custom web development",
+    "web_desc": "Modern, fast, responsive websites and web applications built for every device.",
+    "frontend_title": "Frontend interfaces",
+    "frontend_desc": "Clear, accessible interfaces designed and implemented to deliver an excellent user experience.",
+    "backend_title": "Backend and maintenance",
+    "backend_desc": "Business logic, data management, and ongoing maintenance that help your product continue to grow."
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Experience building software, collaborating with teams, and delivering solutions for a range of products and needs.",
+    "experience1_role": "Full Stack Developer",
+    "experience1_date": "Oct 2022 - 2025",
+    "coming_soon": "Coming soon",
+    "experience1_desc": "I develop and maintain internal and external web applications. I work with Python and Django on the backend, and JavaScript, TypeScript, Vue.js, and React on the frontend. I use PostgreSQL and MySQL for data management, Git for version control, and agile practices with Scrum, Azure, and Jira to organize work and meet goals."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of projects where I apply web development, interface design, and solutions tailored to real needs.",
+    "preview": "Preview",
+    "problem": "Problem",
+    "solution": "Solution",
+    "result": "Result",
+    "code": "Code",
+    "view_site": "View site",
+    "github_aria": "View source code on GitHub",
+    "xoxo_description": "A social platform built to make user interaction clear, smooth, and adaptable.",
+    "xoxo_problem": "Create a digital space that centralizes user interaction without sacrificing clarity or ease of use.",
+    "xoxo_solution": "Built an application with Django and Python, combining an organized backend architecture with a minimalist interface.",
+    "xoxo_result": "A responsive platform that provides consistent navigation across desktop, tablet, and mobile devices.",
+    "frontend_description": "A professional portfolio designed to communicate technical experience, projects, and contact channels through smooth navigation.",
+    "frontend_problem": "Present professional background, skills, and projects convincingly and accessibly on every device.",
+    "frontend_solution": "Built an interface with React and TypeScript, using reusable components, responsive design, and deferred section loading.",
+    "frontend_result": "A public, adaptable site ready to share with recruiters, clients, and collaborators.",
+    "backend_description": "A backend focused on centralizing portfolio logic and keeping a solid foundation for content management.",
+    "backend_problem": "Provide a maintainable structure to manage portfolio data, content, and future functionality.",
+    "backend_solution": "Built the backend with Django and Python, separating business logic from the presentation layer.",
+    "backend_result": "An organized, extensible foundation for connecting projects, content, and future integrations.",
+    "backend_extended_description": "This portfolio demonstrates my ability to build complex web applications, prioritizing data integrity and robust business logic through the Python ecosystem.",
+    "backend_extended_problem": "Manage portfolio information with a secure, easy-to-maintain structure.",
+    "backend_extended_solution": "Implemented a Django-based backend to organize data and expose business logic.",
+    "backend_extended_result": "A scalable foundation for connecting portfolio content, projects, and future integrations.",
+    "studymax_description": "An educational platform designed to support learning and student interaction through rooms and conversations.",
+    "studymax_problem": "Create a digital space where users could share knowledge and interact in an organized way.",
+    "studymax_solution": "Built an application with Django and Python, integrating discussion rooms and a dynamic web interface.",
+    "studymax_result": "A functional educational platform that supports communication, collaboration, and learning among users.",
+    "ttravel_description": "A travel agency website focused on presenting destinations and services in an engaging, accessible way.",
+    "ttravel_problem": "Create an engaging web experience to present a travel agency and its different options clearly.",
+    "ttravel_solution": "Built a modern, responsive interface with JavaScript and Vite, organizing content to make navigation easier.",
+    "ttravel_result": "An adaptable, visually appealing website for promoting travel services and destinations.",
+    "test_task_front_description": "A Kanban application for organizing projects and tasks through a visual management system.",
+    "test_task_front_problem": "Make it easy to organize and track project tasks in a simple, visual way.",
+    "test_task_front_solution": "Built a Kanban board with React and TypeScript, allowing tasks to be managed and moved between different states.",
+    "test_task_front_result": "A visual, responsive tool that supports planning, organization, and project-progress tracking.",
+    "test_task_back_description": "The backend of a Kanban application for managing projects, tasks, and their data in a structured way.",
+    "test_task_back_problem": "Create a backend foundation capable of managing the data and logic required by a task-management application.",
+    "test_task_back_solution": "Built the backend with Django and Python, organizing applications, models, and processes to manage system data.",
+    "test_task_back_result": "A structured backend API ready to support the Kanban board's project- and task-management features."
+  },
+  "education": {
     "title": "Education",
-    "subtitle": "My education has been a journey of self-discovery and growth. The educational details are as follows.",
-    "school1_desc": "I completed my education at the Technical Professional College of Aserri, where I studied and developed various skills and knowledge in software from different areas of computer science, creating various applications to put into practice the knowledge acquired during the course.",
-    "school2_desc": "I completed my secondary education at the Aserri High School, where I studied and developed different skills.",
-    "school3_desc": "I completed my schooling at the Manuel Hidalgo School, where I studied and developed different skills.",
-    "school1_degree": "Intermediate Technician as a Software Developer",
-    "school2_degree": "Completed Grade Diploma",
-    "school3_degree": "Completed Grade Diploma"
-	}	,
-
-	"contact":{
-		"title": "Contact",
-		"subtitle":"Feel free to contact me if you have any questions or opportunities!",
-		"form_title": "Contact me",
-		"email": "email",
-		"name": "Name",
-		"subject": "Subject",
-		"message": "Message",
-		"send": "Send",
-		"copy":"2025 Estifito. All rights reserved."
-	}
-
-
-
-	
+    "subtitle": "Academic training that supports my technical growth and continuous learning in technology.",
+    "school1_desc": "Technical training focused on software development and computer science fundamentals. During the program, I built applications to apply the knowledge gained in different contexts.",
+    "school2_desc": "Secondary education that strengthened my academic foundations, discipline, and learning skills.",
+    "school3_desc": "Primary education that provided the foundations for my academic path.",
+    "school1_degree": "Technical Degree in Software Development",
+    "school2_degree": "Completed Secondary Education",
+    "school3_degree": "Completed Primary Education",
+    "school1_date": "Feb 2019 - Sep 2022",
+    "school2_date": "Feb 2015 - Nov 2018",
+    "school3_date": "Feb 2010 - Apr 2015"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have an opportunity, project, or question? I would be happy to hear from you.",
+    "form_title": "Let's talk",
+    "email": "email",
+    "name": "Name",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send",
+    "copy": "2026 Estifito. All rights reserved.",
+    "message_sent": "Message sent successfully.",
+    "invalid": "Please check the form fields.",
+    "wait": "Please wait 30 seconds before sending another message.",
+    "error": "Your message could not be sent. Please try again later.",
+    "sending": "Sending...",
+    "unavailable": "The form is unavailable. You can contact me on WhatsApp or LinkedIn."
+  },
+  "ui": {
+    "loading": "Loading...",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
+    "whatsapp_contact": "Contact via WhatsApp",
+    "whatsapp_message": "Hi Michael, I saw your portfolio and would like to get in touch."
+  }
 }

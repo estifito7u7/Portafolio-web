@@ -1,57 +1,120 @@
 {
-	"nav": {
-	"about": "Inicio",
-	"skills": "Habilidades",
-	"experience": "Experiencia",
-	"projects": "Proyectos",
-	"education": "Educación",
-	"github_profile": "Perfil de GitHub"
-},
-	"hero":{
-		"title":"Hola, yo soy",
-		"subtitle":"yo soy",
-		"download_cv":"Descagar cv",
-		"description":"Soy una persona motivada y polivalente, siempre con ganas de asumir nuevos retos. Con pasión por aprender, me dedico a ofrecer resultados de alta calidad. Con una actitud positiva y una mentalidad de crecimiento, estoy listo para hacer una contribución significativa y lograr grandes cosas."
-	},
-	"skills":{
-		"title":"Habilidades",
-		"subtitle":"Estas son algunas de mis habilidades y conocimientos adquiridos en los años que he estado trabajando durante en los últimos 2 años."
-	},
-	
-	"experience":{
-		"title": "Experiencia",
-		"subtitle":" Mi experiencia laboral como Desarrollador de software y trabajando en diferentes empresas y proyectos.",
-		"experience1_role":"Frontend Developer y Backend Developer",
-		"experience1_desc":"Desarrollador de aplicaciones web, creando y brindando mantenimiento a varias aplicaciones internas y externas. Utilizo Python y Django para el Back end, y JavaScript/TypeScript con VueJs y ReactJS para el Frontend. Manejo gestores de bases de datos como PostgreSQL y MySQL, trabajando con herramientas de control de versiones como Git. Adopté el marco de trabajo SCRUM y herramientas Azure y Jira para para gestionar gestionar proyectos. proyectos. como Azure Basando mis labores en habilidades sólidas en el desarrollo de aplicaciones web, trabajo en equipo y cumplimiento de objetivos."
-	},
-	"projects":{
-		"title": "Proyectos",
-		"subtitle":"He trabajado en una amplia gama de proyectos con distintas tegnologias de aplicaciones web  Éstos son algunos de mis proyectos."
-	},
-	"education":{
-		"title": "Educacion",
-		"subtitle":"Mi educación ha sido un viaje de autodescubrimiento y crecimiento. Los detalles educativos son los siguientes.",
-		"school1_desc":"Completé mi educación en el Colegio Técnico Profesional de Aserri, donde estudié y desarrollé diferentes habilidades y conocimientos de software de distintos rubros de la informática, donde creé diversas aplicaciones para poner en práctica los conocimientos adquiridos durante el curso.",
-		"school2_desc":"Completé mi educación secundaria en el Liceo de Aserri, donde estudié y desarrolle diferentes habilidades",
-		"school3_desc":"Completé mi educación escolar en la Escuela Manuel Hidalgo, donde estudié y desarrolle diferentes habilidades",
-		"school1_degree":"Tecnico medio como desarollador de software",
-		"school2_degree":"Diploma de grado completado",
-		"school3_degree":"Diploma de grado completado"
-	},
-
-	"contact":{
-		"title": "Contacto",
-		"subtitle":"No dudes en comunicarte conmigo si tienes alguna pregunta o oportunidad!",
-		"form_title":"Contactame",
-		"email":"Email",
-		"name":"Nombre",
-		"subject":"Sujeto",
-		"message":"Mensaje",
-		"send":"Enviar",
-		"copy":"2025 Estifito. Todos los derechos reservados."
-	}
-
-
-
-
+  "nav": {
+    "about": "Inicio",
+    "skills": "Habilidades",
+    "services": "Servicios",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "github_profile": "Perfil de GitHub"
+  },
+  "hero": {
+    "title": "Hola, soy",
+    "subtitle": "Desarrollador",
+    "download_cv": "Descargar CV",
+    "description": "Desarrollador de software orientado a la creación de aplicaciones web funcionales, mantenibles y centradas en las personas. Trabajo con tecnologías frontend y backend, y disfruto convertir necesidades de negocio en soluciones digitales claras y escalables."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Tecnologías y herramientas que utilizo para diseñar, desarrollar y mantener productos digitales de principio a fin.",
+    "other": "Otros"
+  },
+  "services": {
+    "title": "¿Cómo puedo ayudarte?",
+    "subtitle": "Servicios enfocados en crear, mejorar y mantener productos digitales que respondan a tus objetivos.",
+    "web_title": "Desarrollo web a medida",
+    "web_desc": "Construcción de sitios y aplicaciones web modernas, rápidas y adaptables a cualquier dispositivo.",
+    "frontend_title": "Interfaces frontend",
+    "frontend_desc": "Diseño e implementación de interfaces claras, accesibles y pensadas para ofrecer una excelente experiencia de usuario.",
+    "backend_title": "Backend y mantenimiento",
+    "backend_desc": "Desarrollo de lógica de negocio, gestión de datos y mantenimiento evolutivo para que tu producto siga creciendo."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Experiencia en desarrollo de software, colaboración con equipos y construcción de soluciones para distintos productos y necesidades.",
+    "experience1_role": "Desarrollador Full Stack",
+    "experience1_date": "Oct 2022 - 2025",
+    "coming_soon": "Próximamente",
+    "experience1_desc": "Desarrollo y doy mantenimiento a aplicaciones web internas y externas. Trabajo con Python y Django en backend, y con JavaScript, TypeScript, Vue.js y React en frontend. Utilizo PostgreSQL y MySQL para la gestión de datos, Git para control de versiones y prácticas ágiles con Scrum, Azure y Jira para organizar el trabajo y cumplir objetivos."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Una selección de proyectos donde aplico desarrollo web, diseño de interfaces y soluciones orientadas a necesidades reales.",
+    "preview": "Vista previa",
+    "problem": "Problema",
+    "solution": "Solución",
+    "result": "Resultado",
+    "code": "Código",
+    "view_site": "Ver sitio",
+    "github_aria": "Ver código en GitHub",
+    "xoxo_description": "Plataforma social desarrollada para facilitar la interacción entre usuarios mediante una experiencia clara, ágil y adaptable.",
+    "xoxo_problem": "Crear un espacio digital que concentrara la interacción de usuarios sin sacrificar claridad ni facilidad de uso.",
+    "xoxo_solution": "Implementé una aplicación con Django y Python, combinando una arquitectura backend organizada con una interfaz minimalista.",
+    "xoxo_result": "Una plataforma responsive que ofrece una navegación consistente en computadoras, tablets y dispositivos móviles.",
+    "frontend_description": "Portafolio profesional diseñado para comunicar experiencia técnica, proyectos y canales de contacto con una navegación fluida.",
+    "frontend_problem": "Presentar trayectoria, habilidades y proyectos de forma convincente y accesible desde cualquier dispositivo.",
+    "frontend_solution": "Desarrollé una interfaz con React y TypeScript, utilizando componentes reutilizables, diseño responsive y carga diferida de secciones.",
+    "frontend_result": "Un sitio público, adaptable y listo para compartir con reclutadores, clientes y colaboradores.",
+    "backend_description": "Backend orientado a centralizar la lógica del portafolio y mantener una base sólida para la gestión de contenido.",
+    "backend_problem": "Contar con una estructura mantenible para administrar datos, contenido y futuras funcionalidades del portafolio.",
+    "backend_solution": "Construí el backend con Django y Python, separando la lógica de negocio de la capa de presentación.",
+    "backend_result": "Una base organizada y extensible para conectar proyectos, contenido y nuevas integraciones del portafolio.",
+    "backend_extended_description": "Este portafolio demuestra mi capacidad para construir aplicaciones web complejas, priorizando la integridad de los datos y una lógica de negocio robusta mediante el ecosistema de Python.",
+    "backend_extended_problem": "Gestionar la información del portafolio con una estructura segura y fácil de mantener.",
+    "backend_extended_solution": "Implementé un backend basado en Django para organizar los datos y exponer la lógica de negocio.",
+    "backend_extended_result": "Una base escalable para conectar contenido, proyectos y futuras integraciones del portafolio.",
+    "studymax_description": "Plataforma educativa orientada a facilitar el aprendizaje y la interacción entre estudiantes mediante salas y conversaciones.",
+    "studymax_problem": "Crear un espacio digital donde los usuarios pudieran compartir conocimientos e interactuar de forma organizada.",
+    "studymax_solution": "Desarrollé una aplicación con Django y Python, integrando salas de conversación y una interfaz web dinámica.",
+    "studymax_result": "Una plataforma educativa funcional que facilita la comunicación, colaboración y aprendizaje entre usuarios.",
+    "ttravel_description": "Sitio web para una agencia de viajes enfocado en presentar destinos y servicios de forma atractiva y accesible.",
+    "ttravel_problem": "Crear una experiencia web atractiva que permitiera presentar una agencia de viajes y sus diferentes opciones de forma clara.",
+    "ttravel_solution": "Desarrollé una interfaz moderna y responsive utilizando JavaScript y Vite, organizando el contenido para facilitar la navegación.",
+    "ttravel_result": "Un sitio web adaptable y visualmente atractivo para promocionar servicios y destinos turísticos.",
+    "test_task_front_description": "Aplicación Kanban para organizar proyectos y tareas mediante un sistema visual de gestión.",
+    "test_task_front_problem": "Facilitar la organización y seguimiento de tareas dentro de proyectos de forma visual y sencilla.",
+    "test_task_front_solution": "Desarrollé un tablero Kanban con React y TypeScript, permitiendo gestionar tareas y moverlas entre diferentes estados.",
+    "test_task_front_result": "Una herramienta visual y responsive que facilita la planificación, organización y seguimiento del progreso de proyectos.",
+    "test_task_back_description": "Backend de una aplicación Kanban para gestionar proyectos, tareas y su información de forma estructurada.",
+    "test_task_back_problem": "Crear una base backend capaz de administrar la información y lógica necesaria para una aplicación de gestión de tareas.",
+    "test_task_back_solution": "Desarrollé el backend con Django y Python, organizando aplicaciones, modelos y procesos para gestionar los datos del sistema.",
+    "test_task_back_result": "Una API backend estructurada y preparada para soportar las funcionalidades de gestión de proyectos y tareas del tablero Kanban."
+  },
+  "education": {
+    "title": "Educación",
+    "subtitle": "Formación académica que respalda mi desarrollo técnico y mi aprendizaje continuo en tecnología.",
+    "school1_desc": "Formación técnica enfocada en desarrollo de software y fundamentos de informática. Durante el programa desarrollé aplicaciones para aplicar los conocimientos adquiridos en distintos contextos.",
+    "school2_desc": "Educación secundaria que fortaleció mis bases académicas, disciplina y capacidad de aprendizaje.",
+    "school3_desc": "Educación primaria que sentó las bases de mi formación académica.",
+    "school1_degree": "Técnico medio en Desarrollo de Software",
+    "school2_degree": "Educación secundaria completa",
+    "school3_degree": "Educación primaria completa",
+    "school1_date": "Feb 2019 - Sep 2022",
+    "school2_date": "Feb 2015 - Nov 2018",
+    "school3_date": "Feb 2010 - Abr 2015"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes una oportunidad, proyecto o consulta? Estaré encantado de conversar contigo.",
+    "form_title": "Hablemos",
+    "email": "Email",
+    "name": "Nombre",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "copy": "2026 Estifito. Todos los derechos reservados.",
+    "message_sent": "Mensaje enviado correctamente.",
+    "invalid": "Revisa los campos del formulario.",
+    "wait": "Espera 30 segundos antes de enviar otro mensaje.",
+    "error": "No se pudo enviar el mensaje. Inténtalo más tarde.",
+    "sending": "Enviando...",
+    "unavailable": "El formulario no está disponible. Puedes contactarme por WhatsApp o LinkedIn."
+  },
+  "ui": {
+    "loading": "Cargando...",
+    "open_menu": "Abrir menú",
+    "close_menu": "Cerrar menú",
+    "whatsapp_contact": "Contactar por WhatsApp",
+    "whatsapp_message": "Hola Michael, vi tu portafolio y me gustaría contactarte."
+  }
 }

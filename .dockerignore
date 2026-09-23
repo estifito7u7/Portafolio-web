@@ -1,0 +1,14 @@
+.git
+.github
+.agents
+.env
+.env.*
+node_modules
+dist
+build
+test-results
+playwright-report
+.vscode
+.idea
+*.log
+README.md

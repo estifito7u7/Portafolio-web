@@ -1,0 +1,15 @@
+{
+  "name": "Estifito | Portafolio de Michael Fernández",
+  "short_name": "Estifito",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090917",
+  "theme_color": "#090917",
+  "icons": [
+    {
+      "src": "/logo.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
